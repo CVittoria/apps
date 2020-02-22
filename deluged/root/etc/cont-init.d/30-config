@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+
+# permissions
+chown -R abc:abc \
+	/config
+chown abc:abc \
+	/downloads
+
+# create remote user
+echo "deluge:cvitt56:10" > /config/auth
